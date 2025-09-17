@@ -1,0 +1,20 @@
+body {
+  background-color: #fffdd0;
+}
+h2 {
+  font-size: large;
+  font-weight: bold;
+  background-color: #e6e6e6;
+
+}
+h3{
+  background-color: #e6e6e6;
+  color:  #36454f;
+  width: fit-content;
+}
+span {
+  color: rgb(126, 128, 255);
+}
+ul{
+  width: fit-content;
+}
