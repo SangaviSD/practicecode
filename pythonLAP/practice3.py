@@ -111,7 +111,84 @@ obj=cal("sangavi",5000)
 print(obj.withdraw(1000))
 print(obj.deposit(2000))
 
+#------------------------------------------------//Inheritance//-------------------------
+#----------------------------------------------------------Single Inheritance-----------------
+##
+##class arth:
+##    def __init__(self,a,b):
+##        self.a=a
+##        self.b=b
+##        self.calc=input("Enter Calculation Function: ")
+##    def add(self):
+##        if calc=="add":
+##            return (f"self.a+self.b")
+##        elif calc=="sub":
+##            return (f"self.a-self.b")
+##        elif calc=="mul":
+##            return (f"self.a*self.b")
+##        elif calc=="div":
+##            return (f"self.a/self.b")
+##        else:
+##            return ("invalid function")
+##
+##class adv(arth):
+##    def expoA(self):
+##        return self.a**2
+##    def expoB(self):
+##        return self.b**2
+##
+##a=int(input("Enter Number 1: "))
+##b=int(input("Enter Number 2: "))
+##obj=arth(a,b)
+##print(obj.add())
+    
+#------------------------------------------------multilevel inheritance-------------------
+##
+##class arth:
+##    def __init__(self,a,b):
+##        self.a=a
+##        self.b=b
+##    def add(self):
+##        return self.a+self.b
+##    def sub(self):
+##        return self.a-self.b
+##class adv_math (arth):
+##    def expo(self):
+##        return self.a**2
+##class sci_math(adv_math):
+##    def root(self):
+##        return self.b**0.5
+##
+##obj=adv_math(4,2)
+##print(obj.expo())
+##obj=sci_math(4,2)
+##print(obj.root())
 
+
+##------------------------------------------------------taskkk-----------------------------------------
+
+##class org:
+##    def __init__(self,name,idd,brand):
+##        self.name=name
+##        self.idd=idd
+##        self.brand=brand
+##class employee(org):
+##    def emp(self):
+##        return (f"Employee name is {self.name}")
+##class number(employee):
+##    def num(self):
+##        return (f"Employee ID is{self.idd}")
+##class laptop(number):
+##    def lap(self):
+##        return (f"Allocated Laptop is {self.brand}")
+##
+##obj=employee("sangavi",12,"lenova")   
+##print(obj.emp())
+##obj=number("sangavi",12,"lenova")
+##print(obj.num())
+##obj=laptop("sangavi",12,"lenova")       
+##print(obj.lap())
+-----------------------------------------------------------------------------------
 
 
 
@@ -131,6 +208,7 @@ print(obj.deposit(2000))
 
 
         
+
 
 
 
