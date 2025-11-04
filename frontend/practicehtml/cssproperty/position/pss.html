@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position and Flexbox</title>
+  <style>
+    .parent {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border: 2px solid #00bfa6;
+      height: 200px;
+    }
+    .child {
+      width: 80px;
+      height: 80px;
+      background-color: #444;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .absolute-box {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #00bfa6;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Flexbox Example</h2>
+  <div class="parent">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">3</div>
+  </div>
+
+  <h2>Absolute Position Example</h2>
+  <div class="absolute-box">I'm absolutely positioned!</div>
+</body>
+</html>

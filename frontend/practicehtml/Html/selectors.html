@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <style>
+      hr{
+        border: 1px solid black;
+      }
+      .des p {
+        background-color: rgb(228, 203, 252);
+      }
+
+      div > p {
+        background-color: aquamarine;
+      }
+
+      .adj + p {
+        color: rgb(245, 170, 170);
+      }
+
+      .gen ~ p {
+        background-color: rgb(6, 1, 19);
+      }
+
+      p:not(.highlight) {
+        color: gray;
+      }
+
+      .pse::first-letter {
+        font-size: 2cm;
+        color: indigo;
+        font-weight: bolder;
+      }
+      h2{
+        align-items: center;
+        text-align: center;
+      }
+      li:first-child{
+        background-color: #f58013;
+      }
+
+      li:nth-child(2){
+        background-color: rgb(255,255, 255);
+      }
+
+      li:last-child{
+        background-color: #00ff00;
+      }
+
+      h4::first-line{
+        color: #aabbcc;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <!-- selectorsss -->
+    <!-- descendant selector -->
+    <div class="des">
+        <h2>descendant selector</h2>
+      <p>descendant selector</p>
+      <p>second on</p>
+    </div>
+<hr>
+
+    <!-- child selector -->
+    <div class="child">
+        <h2>Child Selector</h2>
+      <p>child selector</p>
+      <ul>
+        <p>not direct child</p>
+      </ul>
+      <p>child selector</p>
+    </div>
+<hr>
+
+    <!-- adjacent selector -->
+    <div>
+      <h2 class="adj">adjacent selector</h2>
+      <p>next to h2</p>
+      <p>In second place</p>
+    </div>
+    <p>In second place</p>
+    <p>In second place</p>
+<hr>
+
+    <!-- general selector -->
+    <div>
+      <h2 class="gen">general selector</h2>
+      <p>first line</p>
+      <p>second line</p>
+      <ul>
+        <p>not direct child</p>
+      </ul>
+      <p>first line</p>
+    </div><hr>
+
+    <!-- 
+    pseudo-selector -->
+     <h2>pseudo-selector</h2>
+    <p class="highlight">Highlight</p>
+    <p>Not Highlighted</p>
+
+
+    <ul>
+      <li>dog</li>
+      <li>cat</li>
+      <li>bufflow</li>
+    </ul>
+<hr>
+
+    <h2>pseudo-element</h2>
+    <!--pseudo-element-->
+    <p class="pse">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo facilis
+      ipsum accusantium nihil soluta doloribus nisi, blanditiis qui itaque,
+      possimus libero impedit veniam minima reiciendis quisquam, pariatur
+      corrupti voluptatem necessitatibus.
+    </p>
+<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum sapiente laborum iure. Natus consequuntur repellendus fugiat, doloribus 
+      libero maxime distinctio commodi fugit magnam nesciunt dolore minus quisquam iste provident sit!</h4>
+
+    <marquee>......THANK YOU......</marquee>
+  </body>
+</html>

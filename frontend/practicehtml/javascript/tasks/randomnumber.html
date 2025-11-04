@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Number Guessing Game</title>
+    <style>
+      body {
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #e3f2fd;
+      }
+      .cont{
+        width: 350px;
+        height: auto;
+        border: 2px solid black;
+        flex-direction: column;
+        border-radius: 10px;
+        background: #90caf9;
+        padding: 20px;
+        
+      }
+      input{
+        width: fit-content;
+        padding: 15px 60px;
+        border-radius: 20px;
+        margin: 15px 0;
+        font: bolder;
+      }
+      button {
+        padding: 7px 10px;
+        margin: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+      }
+      #result {
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: larger;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+    <h2>Guess the Number</h2>
+    <input
+      type="number"
+      id="guess"
+      placeholder="Enter your guess"
+    /><br>
+    <button onclick="playGame()">Guess</button>
+    <p id="result"></p>
+    </div>
+
+    <script>
+      function playGame() {
+        let userGuess = document.getElementById("guess").value;
+        const result = document.getElementById("result");
+        const attempts = document.getElementById("attempts");
+        const randomNumber = 36;
+          if (userGuess == randomNumber) {
+            result.textContent = "Congrats!...Correct Guess..!";
+            result.style.color = "green";
+          } 
+          else if (userGuess > randomNumber) {
+            result.textContent = "Too High!";
+            result.style.color = "red";
+          }
+          else if (userGuess < randomNumber) {
+            result.textContent = "Too low!";
+            result.style.color = "blue";
+          }
+           else {
+            result.textContent = "Please enter a number!";
+            result.style.color = "orange";
+          }
+        }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+.cont{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 150px;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 250px;
+    height: 320px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px gray;
+
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+
+
+}
+.circle{
+    display: inline-block;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+}

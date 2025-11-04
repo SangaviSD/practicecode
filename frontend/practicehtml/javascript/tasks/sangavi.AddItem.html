@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add List Items</title>
+  <style>
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .cont{
+        border:2px solid black;
+        width: 200px;
+        height: auto;
+        padding: 30px;
+        margin-top: 20px;
+        border-radius: 15px;
+    }
+    button{
+        padding: 10px;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+    #text{
+        color: red;
+    }
+
+    </style>
+</head>
+<body>
+<div class="cont">
+  <button onclick="additem()">Add Item</button>
+  <ul id="itemlist"></ul>
+  <p id="text"></p>
+</div>
+  <script>
+   let count = 1;
+  function additem() {
+    if (count <= 25) {
+      const li = document.createElement('li');
+      li.textContent = `Item ${count++}`;
+      let itemlist = document.getElementById('itemlist');
+      itemlist.append(li);
+    } else {
+      text = document.getElementById("text");
+      text.textContent = "LIMIT REACHED.....!"
+      alert("Limit reached (25 items max)!");
+    }
+ }
+  </script>
+
+</body>
+</html>

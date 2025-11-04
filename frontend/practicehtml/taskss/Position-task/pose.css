@@ -1,0 +1,118 @@
+body {
+  height: 150vh;
+  background-image: url(https://images8.alphacoders.com/139/1398873.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.minato {
+  width: 200px;
+  height: 140px;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #1c1c1c, #b22222);
+  color: white;
+  border: 2px solid #B22222; 
+}
+
+.naruto {
+  background: linear-gradient(135deg, #0d0d0d, #ff0000);
+  color: white;
+  width: 200px;
+  height: 140px;
+  position: relative;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #B22222; 
+  top: 30px;
+}
+
+.boruto {
+  background: linear-gradient(135deg, #0d0d0d, #ff0000);
+  color: white;
+  width: 200px;
+  height: 140px;
+  position: relative;
+  top: 50px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #B22222; 
+}
+
+.boruto2 {
+  background: linear-gradient(135deg, #0d0d0d, #ff0000);
+  color: white;
+  width: 200px;
+  height: 140px;
+  position: relative;
+  top: 100px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #B22222; 
+}
+
+.sasuke {
+  background: linear-gradient(135deg, #0d0d0d, #ff0000);
+  color: white;
+  width: 200px;
+  height: 120px;
+  position: sticky;
+  left: 500px;
+  top: 0;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #B22222; 
+}
+
+.sakura {
+  background: linear-gradient(135deg, #0d0d0d, #ff0000);
+  color: white;
+  width: auto;
+  height: auto;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #B22222; 
+}
+
+.stic {
+  background-color: red;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: -12px;
+  right: -15px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 3, 3);
+  color: white;
+}
+
+/* .parent{
+    border: 2px solid black;
+    position:relative;
+} */

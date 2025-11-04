@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Finder</title>
+</head>
+<body>
+    <h1>Colour Finder App</h1>
+    <button id="start-btn">Start</button>
+    <ul id="colors">
+
+    </ul>
+    <script>
+        let start = document.getElementById("start-btn");
+         let allList = document.getElementById("colors");
+         start.onclick = function () {
+            for ( let i=0; i<10; i++) {
+                color = "#"+i+i+i+i+i+i;
+                let list = document.createElement("li");
+                list.textContent = "color" + (i+1);
+                list.style.backgroundColor = color;
+                allList.appendChild(list);
+            }
+         }
+         allList.addEventListener("click",function(event){
+            alert(event.target.style.backgroundColor);
+         })
+    </script>
+</body>
+</html>

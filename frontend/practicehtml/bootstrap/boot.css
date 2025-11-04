@@ -1,0 +1,52 @@
+/* Cart Icon */
+.cart {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #2c3e50;
+  color: #ecf0f1;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.cart #cart-count {
+  background: #f1c40f;
+  color: #2c3e50;
+  padding: 2px 8px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+/* Quantity Buttons */
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.quantity button {
+  background: #2c3e50;
+  color: #ecf0f1;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.quantity button:hover {
+  background: #34495e;
+}
+
+.quantity .count {
+  min-width: 20px;
+  text-align: center;
+  font-weight: bold;
+}
