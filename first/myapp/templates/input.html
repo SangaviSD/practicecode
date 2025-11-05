@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUT</title>
+        <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+        }
+        .input {
+            background-color: #fff;
+            padding: 30px 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        .input h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .input input[type="number"]{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .input button {
+            padding: 10px 20px;
+            margin-top: 15px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 9px;
+        }
+        .input button:hover {
+            background-color: #0056b3;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div class="input">
+    <h1>CALCULATION</h1>
+    <form action="{% url 'calcul' %}" method="post">
+        {% csrf_token %}
+        <input type="number" step="any" name="num1" placeholder="Enter The principle" required><br>
+        <input type="number" step="any" name="num2" placeholder="Enter The Interest" required><br>
+         <input type="number" step="any" name="num3" placeholder="Enter The year" required><br>
+        <!-- <button type="submit" name="name" value="add">Addition</button>
+        <button type="submit" name="name" value="sub">Subtraction</button>
+        <button type="submit" name="name" value="mul">Multipy</button>
+        <button type="submit" name="name" value="div">Division</button> -->
+        <button type="submit" name="name" value="sim">Simple Intrest</button>
+
+    </form>
+    </div>
+</body>
+</html>

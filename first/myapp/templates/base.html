@@ -1,0 +1,12 @@
+{% extends 'home.html' %}
+{% load greet_filters %}
+
+{% block content %}
+
+<body bgcolor="white">
+
+<h1>{{name|greet}}</h1>
+<h1>{{name|age}}</h1>
+</body>
+
+{% endblock %}
